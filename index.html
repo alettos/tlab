@@ -9,30 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>TLAB - TP</title>
 </head>
 
 <body>
     <header>
         <div class="hdr-cnt">
-            <div class="hdr-banner">
+            <div class="hdr-bnr">
                 <marquee behavior="scroll" direction="left" scrollamount="10">
                     <p>
-                        <strong>&lt;The Header&gt; : 🎁 Promo de primavera:</strong> 20% off - Solo por tiempo limitado 💲🔥
+                        🎁 Promo de primavera:<strong>20% off</strong> - Solo por tiempo limitado
                     </p>
                 </marquee>
             </div>
+            <div class="hdr-dte">
+                <span id="fecha"></span>
+            </div>
         </div>
-    </header>
-    <fieldset>
-        <legend>The Nav / The Menu</legend>
-        <nav>
-            <menu>
-                <li>
-                    <a href="index.html">
-                        <img src="img/logo.svg" alt="Logo JS" width="50" height="50">
-                    </a>
-                </li>
+        <nav class="hdr-nav">
+            <div class="hdr-nav-lgo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo JS" width="24" height="24">
+                </a>
+            </div>
+            <ul class="hdr-nav-lst">
                 <li>
                     <a href="">Home</a>
                 </li>
@@ -48,14 +49,13 @@
                 <li>
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
-                <li>Carrito</li>
                 <li>
-                    <a href="https://github.com/miguelDocente/pre-entrega_front.git">github_Docente</a>
+                    <a href="./pages/carrito.html">Carrito</a>
                 </li>
-            </menu>
+            </ul>
         </nav>
-    </fieldset>
 
+    </header>
     <main>
         <fieldset>
             <legend>The Main</legend>
@@ -70,9 +70,20 @@
         <fieldset>
             <legend>The Footer</legend>
             <p>Derechos reservados &copy; 2024</p>
+            <i class="fa-brands fa-instagram"></i>
         </fieldset>
     </footer>
 
 </body>
+
+<script>
+    function actualizarReloj() {
+        const ahora = new Date();
+        document.getElementById('fecha').textContent = ahora.toLocaleString('es-AR',
+            { dateStyle: 'medium', timeStyle: 'medium',hour12: false });
+    }
+    actualizarReloj();
+    setInterval(actualizarReloj, 1000);
+</script>
 
 </html>
