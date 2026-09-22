@@ -1,25 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, Arial, sans-serif;
+    /* font-family: Roboto, Arial, sans-serif; */
 }
 
 :root {
-    
+
     --color-darkteal: #242E2D;
     --color-iceblue: #ADC2D3;
-  
-}   
+    --color-pri:#fed7aa;
+    --color-sec: #fff7ed;
+
+
+
+}
 
 body {
-    background-color: var(--color-iceblue);
+    background-color: var(--color-pri);
     color: var(--color-darkteal);
     line-height: 1.0;
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* BARRA SUPERIOR TOPBAR CON BANNER Y FECHA/HORA  */
 
 .hdr-cnt {
     display: flex;
@@ -51,30 +62,60 @@ body {
     border-left: 1px solid var(--color-iceblue);
 }
 
-.hdr-nav {
+
+/* MENU OPCIONES */
+
+.nav-cnt {
     display: flex;
-    justify-content: right;
-    background-color: var(--color-iceblue);
+    background: linear-gradient(to top, #fed7aa 0%, #fff7ed 100%);
+    /* background: linear-gradient(135deg, #FF5F6D, #FFC371); */
+    /* Opcional para mejorar la visibilidad del texto */
+    padding: 1rem;
+    /* background-color: var(--color-iceblue); */
     padding: 20px 0;
-    height: 50px;
+    height: 100px;
 }
 
-.hdr-nav-lgo {
+.nav-lgo {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 10%;
+    padding: auto;
+    margin-left: 10px;
+    font-family: "BBH Bartle" !important;
+    font-size: 20px;
 }
 
-.hdr-nav-lst {
+.nav-lgo-cnt {
     display: flex;
+    justify-content: center;
+}
+
+
+.nav-ico {
+    rotate: 180deg;
+}
+
+.nav-lst {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    align-items: center;
     list-style: none;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
 }
 
-.hdr-nav-lst li {
+.nav-lst li {
     margin: 0 10px;
 }
 
 
-#fecha, #hora {
+#fecha,
+#hora {
     font-weight: bold;
     font-size: 10px;
     color: var(--color-iceblue);
