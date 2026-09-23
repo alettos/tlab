@@ -1,12 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
+/* TABULA RASA CSS*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: Roboto, Arial, sans-serif; */
 }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
 
 :root {
 
@@ -57,7 +86,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3px 10px;
+    padding: 0.5rem;
+    /* padding: 3px 10px; */
     width: 15%;
     border-left: 1px solid var(--color-iceblue);
 }
@@ -68,11 +98,8 @@ a {
 .nav-cnt {
     display: flex;
     background: linear-gradient(to top, #fed7aa 0%, #fff7ed 100%);
-    /* background: linear-gradient(135deg, #FF5F6D, #FFC371); */
-    /* Opcional para mejorar la visibilidad del texto */
     padding: 1rem;
-    /* background-color: var(--color-iceblue); */
-    padding: 20px 0;
+    /* padding: 20px 0; */
     height: 100px;
 }
 
@@ -81,11 +108,12 @@ a {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-    width: 10%;
+    width: 10%; /* navbar Area Logo */
     padding: auto;
     margin-left: 10px;
     font-family: "BBH Bartle" !important;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .nav-lgo-cnt {
@@ -104,9 +132,10 @@ a {
     gap: 35px;
     align-items: center;
     list-style: none;
-    width: 90%;
+    width: 90%; /* navbar resto Area Menu */
     padding: 10px;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 .nav-lst li {

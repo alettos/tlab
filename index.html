@@ -30,7 +30,8 @@
         <nav class="nav-cnt">
             <div class="nav-lgo">
                 <a href="index.html">
-                    <div class="nav-lgo-cnt"><img class="nav-ico" src="img/logo.svg" alt="Logo JS" width="24" height="24"></div>
+                    <div class="nav-lgo-cnt"><img class="nav-ico" src="img/logo.svg" alt="Logo JS" width="24"
+                            height="24"></div>
                     <div class="nav-lgo-cnt">T</div>
                     <div class="nav-lgo-cnt">Lab</div>
                 </a>
@@ -58,6 +59,7 @@
         </nav>
 
     </header>
+
     <main class="man-cnt">
         <aside class="man-asd">
             Aside
@@ -68,11 +70,25 @@
     </main>
 
     <footer>
-        <fieldset>
-            <legend>The Footer</legend>
-            <p>Derechos reservados &copy; 2024</p>
-            <i class="fa-brands fa-instagram"></i>
-        </fieldset>
+        <div>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-facebook"></i>
+            <i class="fas fa-google-plus-g"></i>
+            <i class="fas fa-font-awesome"></i>
+        </div>
+        <div>
+            <i class="fas fa-cc-visa"></i>
+            <i class="fas fa-cc-amex"></i>
+            <i class="fas fa-cc-mastercard"></i>
+        </div>
+        <div>
+            <p>Derechos reservados &copy; 2026</p>
+            <br>
+            <img src="./img/icons8-html-5-48.png" alt="HTML" width="24" height="24">
+            <img src="./img/icons8-css3-48.png" alt="CSS" width="24" height="24">
+            <img src="./img/icons8-javascript-48.png" alt="JS" width="24" height="24">
+        </div>
     </footer>
 
 </body>
@@ -81,7 +97,7 @@
     function actualizarReloj() {
         const ahora = new Date();
         document.getElementById('fecha').textContent = ahora.toLocaleString('es-AR',
-            { dateStyle: 'medium', timeStyle: 'medium',hour12: false });
+            { dateStyle: 'medium', timeStyle: 'medium', hour12: false });
     }
     actualizarReloj();
     setInterval(actualizarReloj, 1000);
