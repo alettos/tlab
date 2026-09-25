@@ -10,36 +10,68 @@
 
 <body>
     <header>
-        <fieldset>
-            <legend>The Header</legend>
+        <div class="hdr-cnt">
 
-            <a href="..\index.html">Volver a Inicio</a>
-        </fieldset>
+        </div>
+        <nav class="nav-cnt">
+            <div class="mnu-lgo">
+                <a href="../index.html">
+                    <div class="mnu-lgo-cnt"><img class="mnu-ico" src="../img/logo.svg" alt="Logo JS" width="24"
+                            height="24"></div>
+                    <div class="mnu-lgo-cnt">T</div>
+                    <div class="mnu-lgo-cnt">Lab</div>
+                </a>
+            </div>
+            <div class="mnu-cnt">
+                <ul class="mnu-lst">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Acerca de...</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./pages/carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <fieldset>
-            <legend>The Main</legend>
-
-            <section>
+        <section class="scn-cnt showme">
+            <div class="frm-cnt showme1">
                 <form action="" method="post">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id:"nombre" name="Nombre" placeholder="Tu Nombre" required>
-                    </div>
-                    <div>
+                    <h1>Formulario de contacto</h1>
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" id:"nombre" name="Nombre" placeholder="Ingresa tu Nombre"
+                            required="obligatorio">
+                    </p>
+                    <p>
                         <label for="mail">Mail:</label>
                         <input type="email" id:"mail" name="mail" placeholder="Tu mail" required>
-                    </div>
-                    <div>
+                    </p>
+                    <p>
                         <label for="msg">Mensaje:</label>
                         <textarea type="text" id:"msg" name="msg" placeholder="Ingresa tu msg" required></textarea>
-                    </div>
+                    </p>
                     <button type="submit">Enviar</button>
                 </form>
-            </section>
-
-        </fieldset>
+            </div>
+        </section>
     </main>
 </body>
 

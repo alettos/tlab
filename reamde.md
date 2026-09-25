@@ -4,12 +4,12 @@
 ### Tienda Web
 
 
-Trabajo Practico Final
-    Desarrollo de una pagina para una tienda de basica
+> Trabajo Practico Final
+> Desarrollo de una pagina para una tienda de basica
 
 Secciones
 
-    1. Home (Topbar, MenuBar, PLP, Reseñas, Suscripcion y Contacto)
+    1. Home (Topbar/FirstRow, MenuBar, PLP/Cards, Reseñas, Suscripcion y Contacto)
     2. Tienda (PLP, PDP)
     3. Blog
     4. Acerca de...
