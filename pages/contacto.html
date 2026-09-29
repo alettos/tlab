@@ -25,19 +25,16 @@
             <div class="mnu-cnt">
                 <ul class="mnu-lst">
                     <li>
-                        <a href="">Home</a>
+                        <a href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Tienda</a>
+                        <a href="../pages/plp.html">Tienda</a>
                     </li>
                     <li>
-                        <a href="">Blog</a>
+                        <a href="../pages/blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="">Acerca de...</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">Contacto</a>
+                        <a href="../pages/us.html">Acerca de...</a>
                     </li>
                     <li>
                         <a href="./pages/carrito.html">Carrito</a>
@@ -48,24 +45,22 @@
     </header>
 
     <main>
-        <section class="scn-cnt showme">
-            <div class="frm-cnt showme1">
-                <form action="" method="post">
+        <section class="scn-cnt">
+            <div class="frm-cnt">
+                <form action="https://formspree.io/f/mjyvovvp" method="post">
                     <h1>Formulario de contacto</h1>
-                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                    <div class="sep"></div>
                     <p>
-                        <label for="nombre" class="colocar_nombre">Nombre
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="text" id:"nombre" name="Nombre" placeholder="Ingresa tu Nombre"
-                            required="obligatorio">
+                        <label for="nombre" class="lbl-nombre">Nombre</label>
+                        <input type="text" id:"nombre" name="nombre" placeholder="Ingresa tu Nombre" required>
                     </p>
                     <p>
-                        <label for="mail">Mail:</label>
+                        <label for="mail" class="lbl-mail">Mail:</label>
                         <input type="email" id:"mail" name="mail" placeholder="Tu mail" required>
                     </p>
                     <p>
-                        <label for="msg">Mensaje:</label>
+                        <label for="msg" class="lbl-msg">Mensaje:</label>
                         <textarea type="text" id:"msg" name="msg" placeholder="Ingresa tu msg" required></textarea>
                     </p>
                     <button type="submit">Enviar</button>
@@ -73,6 +68,28 @@
             </div>
         </section>
     </main>
+    <footer class="ftr-cnt">
+        <div class="ftr-scl">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-font-awesome"></i>
+        </div>
+        <div class="ftr-pay">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-mastercard"></i>
+        </div>
+        <div class="site-autor">
+            <div>
+                <img src="../img/icons8-html-5-48.png" alt="HTML" width="24" height="24">
+                <img src="../img/icons8-css3-48.png" alt="CSS" width="24" height="24">
+                <img src="../img/icons8-javascript-48.png" alt="JS" width="24" height="24">
+            </div>
+            <small>Talento Tech 2026 - (Comision 26238) - Alejandro A. Lettos</small>
+        </div>
+    </footer>
 </body>
 
 </html>
