@@ -569,24 +569,41 @@ form p {
 /* ============================================================
    PAGE:    index.html
    TAGS:    main > section > PLP
-   DESC:    Section con lista de cards de productos.
+   DESC:    Section con lista de cards de productos en el home.
    ============================================================ */
 
 
+.plp-cnt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.plp-cnt .plp-cards {
+    background-color: #09ff00;
+}
+
+/*
 .plp-cnt {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
+*/
 
+/*
 .plp-cards {
     display: flex;
     flex-direction: column;
     height: 200px;
     width: 300px;
-    flex: 1 1 300px; /* Crece, se encoje, base 250px */
+    flex: 1 1 300px;
     /* max-width: 300px; */
+    /*
     background: var(--color-sec);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
