@@ -11,7 +11,7 @@ Secciones
 
     1. Home (Topbar/FirstRow, MenuBar, PLP/Cards, Reseñas, Suscripcion y Contacto)
     2. Tienda (PLP, PDP)
-    3. Blog
+    3. Blog/Reseñas
     4. Acerca de...
     5. Contacto
     6. Carrito
@@ -27,11 +27,4 @@ Paginas
     6. PCP (Product Cart/Checkout Page)
 
 
-# NAMING CLASS CONVECTION
-## NCC
-
-1. Tres / Cuatro characteres maximos para definir HTML-TAGS.
-2. Apocope = Suprimir final palabra.
-3. Sincopa = Suprimir letras intermedias.
-4. 
 

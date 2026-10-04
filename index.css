@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 /* TABULA RASA CSS */
 /* https://css-tricks.com/reboot-resets-reasoning/ */
@@ -16,6 +18,7 @@
     /* font: inherit; */
     vertical-align: baseline;
     background: transparent;
+    font-family: "Nunito", 'Roboto', sans-serif;
 }
 
 article,
@@ -116,6 +119,7 @@ a {
 /* Clases de Efecto Degradado para Texto */
 .txt-fx1 {
     font-size: 72px;
+    font-weight: 750;
     background: linear-gradient(to right, #1ab9e0, #0d22e4, #fc04c6);
     -webkit-background-clip: text;
     background-clip: text;
@@ -149,19 +153,21 @@ header {
 .trow-cnt {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
     color: var(--color-iceblue);
     background-color: var(--color-darkteal);
     width: 100%;
+    height: 30px;
     font-size: 14px;
 }
 
 .trow-bnr {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3px 0;
+    padding: 0.5rem;
     width: 85%;
 }
 
@@ -209,11 +215,8 @@ header {
     flex-wrap: wrap;
     align-items: center;
     width: 50%;
-    /* navbar Area Logo */
     padding: auto;
     margin-left: 10px;
-    font-family: "BBH Bartle" !important;
-    font-size: 16px;
     /* margin-bottom: 40px; */
 }
 
@@ -223,6 +226,9 @@ header {
     /* background: linear-gradient(to left, #fed7aa 30%, #fff7ed 70%); */
 }
 
+.mnu-lgo-cnt a {
+    text-decoration: none;
+}
 
 .mnu-cnt {
     display: flex;
@@ -250,8 +256,12 @@ header {
     margin: 0 10px;
 }
 
+.mnu-lst a {
+    text-decoration: none;
+}
 .mnu-lst a:hover {
     background-color: #fed7aa;
+    text-decoration: none;
 }
 
 
@@ -329,9 +339,9 @@ header {
 }
 
 .site-autor {
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
     /* border-top: var(--color-iceblue) solid 0.5px; */
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,7 +364,7 @@ header {
     justify-content: center;
     top: 0;
     left: 0;
-    background-image: url("../img/FondoContacto.jpg");
+    background-image: url("img/FondoContacto.jpg");
     /* background-color: var(--color-darkteal); */
     margin-bottom: 20PX;
 }
@@ -485,53 +495,54 @@ form p {
 
 
 .main-hero {
-    background-image: url('../img/hero1.png');
-    height: 95vh;
+    background-image: url('/img/hero1.png');
+    /* background-size: auto 300px; */
+    height: 75vh;
     width: 100%;
     background-size: cover;
-    padding: 20px;
+    padding: 10px 20px;
     /* margin-bottom: 40px; */
 }
 
 
-.main-hero .hero-cnt {
+.hero-cnt {
     width: 50%;
     z-index: 1;
 }
 
-.main-hero .hero-cnt h4 {
+.hero-cnt h4 {
     color: var(--color-iceblue);
     margin-bottom: 10px;
     font-size: 1rem;
     /* margin-bottom: 20px; */
 }
 
-.main-hero .hero-cnt h2 {
+.hero-cnt h2 {
     color: var(--color-darkteal);
     font-size: 2.5rem;
     margin: 20px 0;
 
 }
 
-.main-hero .hero-cnt h1 {
+.hero-cnt h1 {
     color: var(--color-iceblue);
     font-size: 3rem;
     /* margin-bottom: 20px; */
 }
 
-.main-hero .hero-cnt p {
+.hero-cnt p {
     color: var(--color-smoke);
     /* margin-bottom: 30px; */
 }
 
-.main-hero .hero-cnt .hero-btn {
+.hero-cnt .hero-btn {
     background-color: var(--color-darkteal);
     color: var(--color-iceblue);
     padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
     width: auto;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .hero-btn:hover {
@@ -552,15 +563,15 @@ form p {
         width: 50% ;
     }
   
-    .main-hero .hero-cnt h4 {
+    .hero-cnt h4 {
         font-size: 0.5rem;
     }
 
-    .main-hero .hero-cnt h3 {
+    .hero-cnt h3 {
         font-size: 1.5rem;
     }
 
-    .main-hero .hero-cnt h2 {
+    .hero-cnt h2 {
         font-size: 2rem;
     }
 
@@ -568,7 +579,7 @@ form p {
 
 /* ============================================================
    PAGE:    index.html
-   TAGS:    main > section > PLP
+   TAGS:    main > section > PLP (Cards)
    DESC:    Section con lista de cards de productos en el home.
    ============================================================ */
 
@@ -576,14 +587,25 @@ form p {
 .plp-cnt {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(3, 225px);
     gap: 24px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .plp-cnt .plp-cards {
-    background-color: #09ff00;
+    background-color: var(--color-pri);
+    /* border-radius: 5px; */
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.plp-cards:hover{
+    box-shadow: 0 0 15px var(--color-darkteal);
+}
+
+.plp-cards-video {
+    width: 225px;
+    height: 200px;
 }
 
 /*
