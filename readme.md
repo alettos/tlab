@@ -5,7 +5,7 @@
 
 
 > Trabajo Practico Final
-> Desarrollo de una pagina para una tienda de basica
+> Desarrollo basico de una pagina para una tienda online.
 
 Secciones
 
@@ -27,4 +27,14 @@ Paginas
     6. PCP (Product Cart/Checkout Page)
 
 
+WIREFRAME
+TopRow 	- Nombre Marca - [Login] - (Omnipresente en todas las paginas)
+Navbar	- (*Menu)
+Above-the-fold (BentoGrid)
+prePLP (Grid Cards)
+
+*Menu
+..Categorías (Select)
+..Ofertas
+..Catalogo
 
