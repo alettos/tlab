@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Contacto</title>
     <link rel="stylesheet" href="../index.css">
 </head>
@@ -15,7 +16,7 @@
         </div>
         <nav class="nav-cnt">
             <div class="mnu-lgo">
-                <a href="./index.html">
+                <a href="../index.html">
                     <div class="mnu-lgo-cnt"><img class="mnu-ico" src="../img/logo.svg" alt="Logo JS" width="24" height="24"></div>
                 </a>
             </div>
@@ -43,24 +44,24 @@
 
     <main>
         <section class="scn-cnt">
-            <div class="frm-cnt">
+            <div class="frm-cnt glass-card">
                 <form action="https://formspree.io/f/mjyvovvp" method="post">
                     <h1>Formulario de contacto</h1>
                     <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
                     <div class="sep"></div>
                     <p>
                         <label for="nombre" class="lbl-nombre">Nombre</label>
-                        <input type="text" id:"nombre" name="nombre" placeholder="Ingresa tu Nombre" required>
+                        <input tabindex="1" type="text" id:"nombre" name="nombre" placeholder="Ingresa tu Nombre" required>
                     </p>
                     <p>
                         <label for="mail" class="lbl-mail">Mail:</label>
-                        <input type="email" id:"mail" name="mail" placeholder="Tu mail" required>
+                        <input tabindex="2" type="email" id:"mail" name="mail" placeholder="Tu mail" required>
                     </p>
                     <p>
                         <label for="msg" class="lbl-msg">Mensaje:</label>
-                        <textarea type="text" id:"msg" name="msg" placeholder="Ingresa tu msg" required></textarea>
+                        <textarea tabindex="3" type="text" id:"msg" name="msg" placeholder="Ingresa tu msg" required></textarea>
                     </p>
-                    <button type="submit">Enviar</button>
+                    <button tabindex="4" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
