@@ -78,7 +78,7 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
 nav,ol,ul {list-style: none;}
 a {text-decoration: none;}
-
+html {scroll-behavior: smooth;}
 
 
 /* CLASES GENERICAS */
@@ -92,6 +92,9 @@ a {text-decoration: none;}
 }
 .showme_azul {
     border: 1px dashed blue;
+}
+.showme_amarillo {
+    border: 1px dashed yellow;
 }
 
 /* Separador */
@@ -364,7 +367,7 @@ a:hover::before {
     color: var(--color-iceblue);
 }
 
-.btn-comprar {
+.hero-cta {
     width: 100%;
     padding: 14px;
 
@@ -378,6 +381,39 @@ a:hover::before {
     font-size: 16px;
     letter-spacing: 3px;
 }
+
+.flecha-abajo {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    text-align: center;
+
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--color-iceblue);
+    animation: rebote 1.5s infinite;
+}
+
+.flecha-abajo:hover {
+    color: #0078d4;
+}
+
+
+
+@keyframes rebote {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translatey(0);
+    }
+    40% {
+        transform: translatey(15px);
+    }
+    60% {
+        transform: translatey(5px);
+    }
+
+}
+
 
 /* ============================================================
    PAGE:    index.html
