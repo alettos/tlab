@@ -1,38 +1,42 @@
-const productos = [
-    {
-        idx: 1,
-        marca: "thierrymugler",
-        titulo: "A*Men",
-        categoria: "Ambery Woody Gourmand",
-        descripcion: "the woody and masculine notes of patchouli imbued with bourbon vanilla vibrate with intensity.",
-        precio: 89.000,
-        badge: "Nuevo",
-        tipobadge: "nuevo",
-        imagen: "img/perfume1.webp"
-    },
-    {
-        idx: 2,
-        marca: "theodoroskalotinis",
-        titulo: "Coffee Addict",
-        categoria: "Amber Gourmand",
-        descripcion: "Coffee Roasted essential oil of the Coffea Arabica plant.",
-        precio: 45.00,
-        badge: "15% OFF",
-        tipobadge: "oferta",
-        imagen: "img/perfume2.webp"
-    },
-    {
-        idx: 3,
-        marca: "billieeilish",
-        titulo: "Eilish Intense",
-        categoria: "Amber Gourmand",
-        descripcion: "richer vanilla, sugared petals, and deeper woods, creating an enriched experience.",
-        precio: 88.00,
-        badge: "15% OFF",
-        tipobadge: "nada",
-        imagen: "img/perfume3.webp"
-    }
-];
+// const productos = [
+//     {
+//         idx: 1,
+//         nombre: "A*Men",
+//         marca: "thierrymugler",
+//         titulo: "A*Men",
+//         categoria: "Ambery Woody Gourmand",
+//         descripcion: "the woody and masculine notes of patchouli imbued with bourbon vanilla vibrate with intensity.",
+//         precio: 89.000,
+//         badge: "Nuevo",
+//         tipobadge: "nuevo",
+//         imagen: "img/perfume1.webp"
+//     },
+//     {
+//         idx: 2,
+//         nombre: "Coffee Addict",
+//         marca: "theodoroskalotinis",
+//         titulo: "Coffee Addict",
+//         categoria: "Amber Gourmand",
+//         descripcion: "Coffee Roasted essential oil of the Coffea Arabica plant.",
+//         precio: 45.00,
+//         badge: "15% OFF",
+//         tipobadge: "oferta",
+//         imagen: "img/perfume2.webp"
+//     },
+//     {
+//         idx: 3,
+//         nombre: "Eilish Intense",
+//         marca: "billieeilish",
+//         titulo: "Eilish Intense",
+//         categoria: "Amber Gourmand",
+//         descripcion: "richer vanilla, sugared petals, and deeper woods, creating an enriched experience.",
+//         precio: 88.00,
+//         badge: "15% OFF",
+//         tipobadge: "nada",
+//         imagen: "img/perfume3.webp"
+//     }
+// ];
+
 
 function crearPLP(listaProductos) {
     const contenedor = document.getElementById("contenedor-productos");
@@ -46,7 +50,7 @@ function crearPLP(listaProductos) {
         <div class="card-imagen">
             ${producto.tipobadge === "nuevo" ? `<span class="badge">${producto.badge}</span>`
                 : producto.tipobadge === "oferta" ? `<span class="badge oferta">${producto.badge}</span>`
-                : ""
+                    : ""
             }
             <img src="${producto.imagen}" alt="${producto.titulo}">
         </div>
@@ -66,6 +70,26 @@ function crearPLP(listaProductos) {
     });
 }
 
-crearPLP(productos);
+
+
+// listado de productos en formato JSON
+// MockupAPI: https://6afc6f35892984c4494b9624.mockapi.io/api/tpfinal/productos
+
+
+function obtenerProductos(cantidad = 4) {
+    fetch("https://6afc6f35892984c4494b9624.mockapi.io/api/tpfinal/productos")
+        .then((response) => response.json())
+        .then((data) => {
+            // const productos = JSON.stringify(data);
+            data = data.slice(0, cantidad);
+            crearPLP(data);
+        })
+        .catch((error) => { console.error("Error al obtener los productos:", error); });
+}
+
+
+obtenerProductos(4);
+
+// crearPLP(productos);
 
 

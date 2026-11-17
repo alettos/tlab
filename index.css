@@ -464,6 +464,25 @@ a:hover::before {
     }
 }
 
+.contenedor-video {
+    display: inline-block;
+    width: 400px; 
+    height: 250px;
+    overflow: hidden;
+    border: none;
+    border-radius: 12px;
+}
+
+.contenedor-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+
 /* ============================================================
    PAGE:    index.html
    TAGS:    body > main > productos-seccion
