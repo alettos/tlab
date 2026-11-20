@@ -269,7 +269,7 @@ html {
     max-width: var(--MaxWidth);
     margin: 0 auto;
     padding: 1rem 2rem;
-    /* height: 60px; */
+    height: 60px;
     position: sticky;
     top: 0;
 
@@ -306,7 +306,7 @@ html {
     position: relative;
 }
 
-a::before {
+/* a::before {
     content: '';
     background: transparent;
     position: absolute;
@@ -315,14 +315,14 @@ a::before {
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.3s;
-}
+} */
 
-a:hover::before {
+/* a:hover::before {
     bottom: 0;
     height: 100%;
     transform: scale(1);
     opacity: 0.7;
-}
+} */
 
 .mnu-lgo {
     display: flex;
@@ -466,7 +466,7 @@ a:hover::before {
 
 .contenedor-video {
     display: inline-block;
-    width: 400px; 
+    width: 100%;  
     height: 250px;
     overflow: hidden;
     border: none;
@@ -525,7 +525,6 @@ a:hover::before {
     transform: translateY(-6px);
     border-color: var(--color-Vainilla);
     box-shadow: 0 12px 24px rgba(34, 24, 18, 0.14);
-    /* Sombra en --color-NegroCalido */
 }
 
 /* Imagen y etiqueta superior */
@@ -649,7 +648,7 @@ a:hover::before {
     padding-top: 1rem;
 }
 
-.precio {
+.producto-precio {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-Cobrizo);
@@ -665,11 +664,22 @@ a:hover::before {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.25s ease, color 0.25s ease;
+    border: 3px solid transparent; 
+    /* transition: border-color 0.1s ease; */
 }
 
 .btn-agregar:hover {
     background-color: var(--color-Vainilla);
     color: var(--color-NegroCalido);
+}
+
+/* aqui */
+.btn-agregar:active {
+    /* background-color: var(--color-RojoPetalo); */
+    transform: translateY(2px);
+    /* border-color: var(--color-RojoPetalo); */
+    outline: 3px solid var(--color-Cobrizo);
+    outline-offset: 2px;
 }
 
 

@@ -1,3 +1,17 @@
+> Issue #1
+> Problema para traer el path de las imagenes segun la ubicacion en los folder
+> en el array guarde dentro de producto.imagen = "img/imagen1.jpg"
+> desde la razi/index.html lo trae sin problemas, pero desde /áges/cart.html no encuentra ese path
+> Solucion: 
+> 1. Cargar solo el nombre del archivo imagen en el array de datos
+> 1. Cargar la ubicacion actual en una variable en cada pagina
+> 2. Completar el src segun corresponde con "../img/img1.jpg" o "./img/img2.jpg"
+
+
+
+
+
+
 # FEATURES PLUS
 1. TopBar: Banner / Marquee
 2. Vista Rapida de Productos
@@ -99,3 +113,8 @@
 
 /* Desktop XL */
 @media (min-width: 1920px) { }
+
+
+
+
+https://github.com/miguelDocente/proyectoFinal_26238.git
